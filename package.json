@@ -1,0 +1,30 @@
+{
+  "name": "tackle-bp",
+  "private": true,
+  "scripts": {
+    "start": "meteor --settings settings.json",
+    "staging": "modulus env set METEOR_SETTINGS \"$(cat settings-staging.json)\" -p 'App - Staging' && modulus deploy -f -p 'App - Staging'",
+    "production": "modulus env set METEOR_SETTINGS \"$(cat settings-production.json)\" -p 'App - Production' && modulus deploy -f -p 'App - Production'"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "bcrypt": "^1.0.2",
+    "classnames": "^2.2.5",
+    "commonmark": "^0.27.0",
+    "dotenv": "^4.0.0",
+    "google-maps-react": "^1.1.0",
+    "jquery": "^2.2.4",
+    "jquery-validation": "^1.16.0",
+    "meteor-node-stubs": "~0.2.4",
+    "moment": "^2.18.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-addons-pure-render-mixin": "^15.6.0",
+    "react-big-calendar": "^0.14.4",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.6.1",
+    "react-router-bootstrap": "^0.24.2",
+    "react-router-dom": "^4.1.1",
+    "simpl-schema": "^0.3.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "public": {
+    "dev":{
+      "env": "development"
+    },
+    "staging":{},
+    "production":{},
+    "version":"1.0"
+  }
+}
